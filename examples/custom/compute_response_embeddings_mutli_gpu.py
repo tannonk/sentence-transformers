@@ -17,7 +17,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 
 
 def set_args():
-    ap = argpase.ArgumentParser()
+    ap = argparse.ArgumentParser()
     ap.add_args('-i', '--input-files', nargs='*', help='raw text corpus files containing `documents` to be embedded and converted to corpus of tensors')
     ap.add_args('-t', '--tensor-file', help='file for saving corpus tensor, e.g. corpus_embeddings.pt')
     ap.add_args('-s', '--sents-file', help='file for saving corpus sentences, e.g. corpus_sents.pkl')
